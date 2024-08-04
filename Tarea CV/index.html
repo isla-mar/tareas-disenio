@@ -4,84 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum Vitae</title>
-    <!--Se agrego un poquito de CSS solo para que se viera mejor-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+
+        .grenze-gotisch {
+        font-family: "Grenze Gotisch", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
         }
-        h1 {
-            text-align: center;
+        h2 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        section {
+            padding: 20px;
+        }
+        body {
+            background-color: #f8f9fa; 
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .section {
-            margin-bottom: 20px;
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .section h2 {
-            margin-bottom: 10px;
-        }
-        .section ul {
-            list-style-type: none;
-            padding: 0;
+        .center {
+            justify-content: center;
+            align-items: center;
+            background-color: #dff9fb;
+            padding: 2em;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Currículum Vitae</h1>
+    <div class="container mt-5">
+        <h1 class="text-center grenze-gotisch">Currículum Vitae</h1>
 
-        <div class="section">
-            <h2>Fotografía</h2>
-            <img src="foto.jpg" alt="Tu Fotografía" style="max-width: 200px;">
+        <div class="row my-4 center">
+            <div class="col-md-3 img-container">
+                <img src="foto.jpg" alt="Soy esa" class="img-fluid rounded-circle" style="max-width: 200px;">
+            </div>
+            <div class="col-md-5">
+                <h2>Datos Generales</h2>
+                <ul class="list-unstyled">
+                    <li><strong>Nombre Completo:</strong> Islamar Daniela Ortiz Alberto</li>
+                    <li><strong>Correo Electrónico:</strong> islamar.ortiz@unah.hn</li>
+                    <li><strong>Dirección:</strong> 208 Jhonson St Saint Rose LA 70087</li>
+                    <li><strong>Teléfono:</strong> +504 9485-2712</li>
+                </ul>
+            </div>
+            <div class="col-md-3 img-container">
+                <a href="https://github.com/isla-mar" target="_blank" class="btn btn-dark">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Datos Generales</h2>
-            <ul>
-                <li>Nombre Completo: Islamar Daniela Ortiz Alberto</li>
-                <li>Correo Electrónico: islamar.ortiz@unah.hn</li>
-                <li>Dirección: 208 Jhonson St Saint Rose LA 70087</li>
-                <li>Teléfono: +504 9485-2712</li>
-            </ul>
+        <div class="row my-4">
+            <div class="col-md-6">
+                <h2>Educación</h2>
+                <ul class="list-unstyled">
+                    <li><strong>Escuela Primaria:</strong> Dr Miguel Paz Barahona</li>
+                    <li><strong>Escuela Secundaria:</strong> Instituto Superacion</li>
+                    <li><strong>Universidad:</strong> Carrera de Ingenieria en Sistemas, Universidad Nacional Autonoma de Honduras</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Experiencia Laboral</h2>
+                <ul class="list-unstyled">
+                    <li><strong>Universidad Kennedy:</strong> Asesora Academica (2023)</li>
+                    <li><strong>Arca Technologies:</strong> Soporte Tecnico de Aplicaciones (2024)</li>
+                    <li><strong>UNAH-VS:</strong> Elaboracion de una tienda en linea (2024)</li>
+                    <li><a href="./Tienda/tienda.html">Enlace de referencia</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Educación</h2>
-            <ul>
-                <li>Escuela Primaria: Dr Miguel Paz Barahona</li>
-                <li>Escuela Secundaria: Instituto Superacion</li>
-                <li>Universidad: Carrera de Ingenieria en Sistemas, Universidad Nacional Autonoma de Honduras</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Experiencia Laboral</h2>
-            <ul>
-                <li>Universidad Kennedy - Asesora Academica (2023)</li>
-                <li>Arca Technologies - Soporte Tecnico de Aplicaciones (2024)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Cursos Recibidos</h2>
-            <ul>
-                <li>Python Essentials - UNAH (2023)</li>
-                <li>Tableros de Mandos en Excel - LinkedIn (2022)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Habilidades y Otros Aspectos</h2>
-            <ul>
-                <li>Creativa</li>
-                <li>Trabajo en Equipo</li>
-                <li>Autodidacta</li>
-                <li>Resiliente</li>
-            </ul>
+        <div class="row my-4">
+            <div class="col-md-6">
+                <h2>Cursos Recibidos</h2>
+                <ul class="list-unstyled">
+                    <li><strong>Python Essentials:</strong> UNAH (2023)</li>
+                    <li><strong>Tableros de Mandos en Excel:</strong> LinkedIn (2022)</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Habilidades y Otros Aspectos</h2>
+                <ul class="list-unstyled">
+                    <li>Creativa</li>
+                    <li>Trabajo en Equipo</li>
+                    <li>Autodidacta</li>
+                    <li>Resiliente</li>
+                </ul>
+            </div>
         </div>
     </div>
+
 </body>
 </html>
